@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: relative; width: 1024px; height: 576px;">
+            <div style="position: absolute; z-index: 1; display: flex; width: 1024px; align-items: center; padding: 20px">
+                <!-- Player health -->
+                <div style = "position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+                    <div style = "background-color: yellow; height: 30px; width: 100%;"></div>
+                    <div id = "Player Health" style = "position: absolute; background: blue; top: 0; right: 0; bottom: 0; width: 100%;"></div>
+                </div>
+
+                <div id = "timer" style="background-color: red; width: 100px; height: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                    10
+                </div>
+
+                <!-- Enemy health -->
+                <div style = "position: relative; height: 30px; width: 100%;">
+                    <div style = "background-color: yellow; height: 30px; width: 100%;"></div>
+                    <div id = "Enemy Health" style = "position: absolute; background: blue; top: 0; left: 0; right: 0; bottom: 0;"></div>
+                </div>
+            </div>
+
+            <div id = "text" style = "position: absolute; color: yellow; align-items: center; justify-content: center; top: 0; right: 0; bottom: 0; left: 0; display: none; font-size: 28px;">Tie</div>
+
+            <canvas id = "c" width="1024" height="576"></canvas>
+        </div>
+
+        <script src = "utility.js"></script>
+        <script src="classes.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
